@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Consulta | CNPJ</title>
+</head>
+
+<body>
+
+  <form>
+    <div class="allForm">
+
+      <p>Consultar CNPJ</p>
+
+      <div class="form um">
+        <label>CNPJ</label>
+
+        <input type="text" onblur="checkCnpj(this.value)" data-mask="00.000.000/0000-00" placeholder="Informe o CNPJ">
+      </div>
+
+      <div class="form dois">
+        <label>Razão Social</label>
+        <input type="text" id="razaosocial">
+      </div>
+
+      <div class="form tres">
+        <label>Nome Fantasia</label>
+        <input type="text" id="fantasia">
+      </div>
+
+      <div class="row">
+        <div class="form quatro">
+          <label>Logradouro</label>
+          <input type="text" id="logradouro">
+        </div>
+
+        <div class="form cinco">
+          <label>Número</label>
+          <input type="text" id="numero">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form seis">
+          <label>Municipio</label>
+          <input type="text" id="municipio">
+        </div>
+
+        <div class="form sete">
+          <label>UF</label>
+          <input type="text" id="uf">
+        </div>
+      </div>
+
+    </div>
+
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script src="/api.js"></script>
+
+</body>
+
+</html>
